@@ -119,14 +119,4 @@ ehthumbs.db
 Thumbs.db
 
 # Project specific
-data/food-101/images/
-data/raw/
-data/processed/
-out/features/
-out/models/
-out/results/
-out/logs/
-*.h5
-*.hdf5
-*.pkl
-*.pickle 
+src//datasets/data/food-101
