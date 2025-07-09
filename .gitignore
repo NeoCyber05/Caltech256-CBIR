@@ -119,4 +119,4 @@ ehthumbs.db
 Thumbs.db
 
 # Project specific
-src//datasets/data/food-101
+src/datasets/data/food-101

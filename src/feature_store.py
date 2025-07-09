@@ -3,9 +3,12 @@ from abc import ABC, abstractmethod
 import numpy as np
 from src.utils.distance import d2s_typing
 
+class ImageSearchObject:
+    def __init__(self, index: int, score: float, image=None) -> None:
+        self.index = index
+        self.score = score
+        self.image = image
 
-# from src.entities.search_objects import ImageSearchObject
-# from src.utils.distance import d2s_typing
 
 class FeatureStore(ABC):
     def validate_inputs(self, images: np.ndarray | list, features: np.ndarray | list):

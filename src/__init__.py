@@ -15,8 +15,12 @@ Modules:
 __version__ = "1.0.0"
 __author__ = "Your Name"
 
-from . import datasets
-from . import featuring
-from . import retrieval
-from . import storage
-from . import utils 
+from __future__ import annotations
+
+from src.feature_extractor import FeatureExtractor, SingleFeatureExtractor, BatchFeatureExtractor
+from src.feature_store import FeatureStore
+from src.retrieve import Retrieve
+from src.storage import *
+from src.featuring import *
+from src.retrieval import *
+from src.metrics import *

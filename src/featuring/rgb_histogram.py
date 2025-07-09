@@ -6,7 +6,7 @@ from typing import Literal
 import cv2
 import numpy as np
 
-from ..feature_extractor import SingleFeatureExtractor
+from src.feature_extractor import SingleFeatureExtractor
 
 
 class RGBHistogram(SingleFeatureExtractor):
