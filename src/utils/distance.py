@@ -8,10 +8,7 @@ from scipy import spatial
 d2s_typing = Literal["exp", "log", "logistic", "gaussian", "inverse"]
 
 
-def get_score(
-        distance_transform: d2s_typing,
-        **args,
-) -> callable:
+def get_score(distance_transform: d2s_typing,**args,) -> callable:
     """
     Transforms the given distance into a score.
     """

@@ -1,60 +1,30 @@
-from __future__ import print_function
-
-from typing import Literal
-
+from __future__ import annotations
+from abc import ABC, abstractmethod
 import numpy as np
-from scipy import spatial
-
-d2s_typing = Literal["exp", "log", "logistic", "gaussian", "inverse"]
+from src.utils.distance import d2s_typing
 
 
-def get_d2s_transform(
-        distance_transform: d2s_typing,
-        **kwargs,
-) -> callable:
-    """
-    Returns a callable that transforms the given distance into a score.
+# from src.entities.search_objects import ImageSearchObject
+# from src.utils.distance import d2s_typing
 
-    Parameters
-    ----------
-    distance_transform : str
-        The type of distance transform to use. One of 'exp', 'log', 'logistic', 'gaussian', 'inverse'.
-    **kwargs : dict
-        Additional keyword arguments to pass to the chosen transform. For example, the 'gaussian' transform
-        requires a 'sigma' parameter.
+class FeatureStore(ABC):
+    def validate_inputs(self, images: np.ndarray | list, features: np.ndarray | list):
+        """Validate and normalize image and feature inputs"""
+        if isinstance(images, list) and isinstance(features, list):
+            assert len(images) == len(features), "Images and features must have same length"
+            assert (len(images) > 0 and len(features) > 0), "Images and features cannot be empty"
+        elif isinstance(images, np.ndarray) and isinstance(features, np.ndarray):
+            images = [images]
+            features = [features]
 
-    Returns
-    -------
-    callable
-        A function that takes a distance and returns a transformed score.
-    """
-    if distance_transform == "exp":
-        return lambda x: np.exp(-x)
-    elif distance_transform == "log":
-        return lambda x: -np.log(x)
-    elif distance_transform == "logistic":
-        return lambda x: 1 / (1 + np.exp(-x))
-    elif distance_transform == "gaussian":
-        sigma = kwargs.get("sigma", 1)
-        return lambda x: np.exp(-(x ** 2) / (2 * sigma ** 2))
-    elif distance_transform == "inverse":
-        return lambda x: 1 / 1 + x
-    else:
-        raise ValueError(f"Invalid distance transform: {distance_transform}")
+        return images, features
 
+    @abstractmethod
+    def add(self, images: np.ndarray | list, features: np.ndarray | list) -> None:
+        """Add images and their features to the store"""
+        pass
 
-def distance(
-        v1, v2, d_type: Literal["absolute", "cosine", "square", "d2-norm"] = "cosine"
-):
-    assert v1.shape == v2.shape, "shape of two vectors need to be same!"
-
-    if d_type == "absolute":
-        return np.sum(np.absolute(v1 - v2))
-    elif d_type == "d2-norm":
-        return 2 - 2 * np.dot(v1, v2)
-    elif d_type == "cosine":
-        return spatial.distance.cosine(v1, v2)
-    elif d_type == "square":
-        return np.sum((v1 - v2) ** 2)
-    else:
-        raise ValueError(f"Invalid distance type: {d_type}")
+    @abstractmethod
+    def search(self, feature: np.ndarray, k=5, distance_transform: d2s_typing = "exp") -> list[ImageSearchObject]:
+        """Find k most similar items to query feature"""
+        pass
