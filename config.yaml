@@ -1,0 +1,91 @@
+# Cấu hình chung cho project CBIR Food 101
+project:
+  name: "Food-CBIR"
+  version: "1.0.0"
+  description: "Content-Based Image Retrieval for Food 101 Dataset"
+
+# Cấu hình dataset
+dataset:
+  name: "food101"
+  path: "data/food-101"
+  num_classes: 101
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+  image_size: [224, 224]
+  batch_size: 32
+
+# Cấu hình trích xuất đặc trưng
+features:
+  methods:
+    - "rgb_histogram"
+    - "edge_histogram" 
+    - "sift"
+    - "resnet"
+    - "vgg"
+    - "efficientnet"
+  
+  rgb_histogram:
+    bins: [8, 8, 8]
+  
+  edge_histogram:
+    bins: 64
+  
+  sift:
+    n_features: 0
+    n_octave_layers: 3
+    contrast_threshold: 0.04
+    edge_threshold: 10
+  
+  cnn_models:
+    resnet:
+      model: "resnet50"
+      pretrained: true
+      layer: "avgpool"
+    vgg:
+      model: "vgg16"
+      pretrained: true
+      layer: "classifier.3"
+    efficientnet:
+      model: "efficientnet_b0"
+      pretrained: true
+
+# Cấu hình retrieval
+retrieval:
+  methods:
+    - "knn"
+    - "cosine"
+    - "euclidean"
+  
+  knn:
+    k: 10
+    algorithm: "auto"
+  
+  top_k: 20
+
+# Cấu hình lưu trữ
+storage:
+  features_dir: "out/features"
+  models_dir: "out/models"
+  results_dir: "out/results"
+  logs_dir: "out/logs"
+  
+  use_faiss: true
+  faiss_index_type: "IndexFlatL2"
+
+# Cấu hình evaluation
+evaluation:
+  metrics:
+    - "precision"
+    - "recall"
+    - "f1_score"
+    - "map"  # Mean Average Precision
+    - "mrr"  # Mean Reciprocal Rank
+  
+  k_values: [1, 5, 10, 20]
+
+# Cấu hình logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  save_logs: true 
