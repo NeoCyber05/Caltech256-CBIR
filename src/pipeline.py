@@ -6,7 +6,7 @@ import cv2
 import numpy as np
 
 from src import BatchFeatureExtractor,FeatureExtractor,FeatureStore,SingleFeatureExtractor
-#from src.entities.search_objects import ImageSearchObject
+from src.feature_store import ImageSearchObject
 from src.utils.distance import d2s_typing
 
 class CBIR:
@@ -51,7 +51,7 @@ class CBIR:
                 features.append(self.feature_extractor(image))
         elif isinstance(self.feature_extractor, BatchFeatureExtractor):
             features = self.feature_extractor(images_list).tolist()
-        self.feature_store.add_index(images_list, features)
+        self.feature_store.add(images_list, features)
 
     def query_similar_images(self,image: Union[np.ndarray, os.PathLike],k: int = 5,distance_transform: d2s_typing = "exp",) -> List[ImageSearchObject]:
         if isinstance(image, (str, os.PathLike)):
@@ -60,10 +60,10 @@ class CBIR:
             image = cv2.imread(str(image))
         if isinstance(self.feature_extractor, SingleFeatureExtractor):
             feature = self.feature_extractor(image)
-            return self.feature_store.retrieve(feature, k=k, distance_transform=distance_transform)
+            return self.feature_store.search(feature, k=k, distance_transform=distance_transform)
         elif isinstance(self.feature_extractor, BatchFeatureExtractor):
             features = self.feature_extractor([image])
             result = []
             for feature in features:
-                result.append(self.feature_store.retrieve(feature, k=k, distance_transform=distance_transform))
+                result.append(self.feature_store.search(feature, k=k, distance_transform=distance_transform))
             return result

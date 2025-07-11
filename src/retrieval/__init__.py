@@ -1,8 +1,2 @@
-"""
-Retrieval Module
-===============
-
-Module các thuật toán tìm kiếm và so sánh độ tương tự.
-"""
-
-from .knn import KNNRetrieval
+from  __future__ import annotations
+from .KNN import KNNRetrieval

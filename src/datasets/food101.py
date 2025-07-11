@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader, Dataset
 import yaml
 import logging
 from typing import Tuple, List, Optional, Dict, Any
-from pathlib import Path
+
 
 # Setup logger
 logger = logging.getLogger(__name__)
@@ -21,7 +21,7 @@ class CBIRDataset(Dataset):
 class Food101Dataset(CBIRDataset):
     def __init__(
         self, 
-        root: str = "./data/food-101", 
+        root: str = "./data/food-101/food-101", 
         split: str = 'train', 
         image_size: Tuple[int, int] = (224, 224),
         augment: bool = False,
@@ -46,12 +46,21 @@ class Food101Dataset(CBIRDataset):
                 transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
             ])
         
+        # Check if data exists
+        data_path = os.path.join(root, "images")
+        if not os.path.exists(data_path):
+            logger.warning(f"Data path {data_path} not found. Will download Food101 dataset.")
+            download = True
+        else:
+            logger.info(f"Using existing data from {data_path}")
+            download = False
+        
         # Load Food101 dataset
         self.dataset = Food101(
             root=root, 
             split=split, 
             transform=self.transform,
-            download=True
+            download=download
         )
 
     def __getitem__(self, index):
@@ -78,7 +87,7 @@ class Food101DataModule:
     
     def __init__(
         self,
-        root: str = 'data/food-101',
+        root: str = 'data/food-101/food-101',
         batch_size: int = 32,
         num_workers: int = 2,
         image_size: Tuple[int, int] = (224, 224),
@@ -162,7 +171,7 @@ def create_data_module(config_path: str = 'config.yaml') -> Food101DataModule:
         dataset_config = config.get('dataset', {})
         
         return Food101DataModule(
-            root=dataset_config.get('path', 'data/food-101'),
+            root=dataset_config.get('path', 'data/food-101/food-101'),
             batch_size=dataset_config.get('batch_size', 32),
             num_workers=2,
             image_size=tuple(dataset_config.get('image_size', [224, 224])),

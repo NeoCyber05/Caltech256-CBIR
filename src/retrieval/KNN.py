@@ -21,5 +21,3 @@ class KNNRetrieval(Retrieve):
 
         return distances[0], indices[0]
 
-
-    def __init__(self,metric: str|callable | None = "uniform"):

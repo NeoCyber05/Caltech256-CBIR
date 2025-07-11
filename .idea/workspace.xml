@@ -5,17 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77c8946b-569d-4541-8051-507015f3d19d" name="Changes" comment="color_feature">
-      <change afterPath="$PROJECT_DIR$/src/pipeline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/retrieval/KNN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/retrieve.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/VectorDBStore.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/evaluation/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/grid.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FOOD-CBIR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FOOD-CBIR.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datasets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/datasets/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/datasets/food101.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/datasets/food101.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/feature_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/feature_store.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/featuring/rgb_histogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/featuring/rgb_histogram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/featuring/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/featuring/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/retrieval/KNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/retrieval/KNN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/retrieval/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/retrieval/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/VectorDBStore.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/VectorDBStore.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +51,14 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.caltech256.executor&quot;: &quot;Run&quot;,
+    &quot;Python.caltech256_eval.executor&quot;: &quot;Run&quot;,
+    &quot;Python.color_eval.executor&quot;: &quot;Run&quot;,
+    &quot;Python.distance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.eval_demo.executor&quot;: &quot;Run&quot;,
     &quot;Python.food101.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_caltech256.executor&quot;: &quot;Run&quot;,
+    &quot;Python.working_demo.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -62,8 +74,40 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AI\Food-CBIR\data\caltech-256" />
+      <recent name="D:\AI\Food-CBIR\data" />
       <recent name="D:\AI\Food-CBIR\cbir" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="color_eval" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FOOD-CBIR" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/evaluation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\AI\Food-CBIR\src\evaluation\color_eval.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.color_eval" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -85,7 +129,9 @@
       <workItem from="1752047916759" duration="3383000" />
       <workItem from="1752052569611" duration="363000" />
       <workItem from="1752053213897" duration="984000" />
-      <workItem from="1752064890231" duration="9956000" />
+      <workItem from="1752064890231" duration="10759000" />
+      <workItem from="1752115910068" duration="35353000" />
+      <workItem from="1752219904004" duration="258000" />
     </task>
     <task id="LOCAL-00001" summary="color_feature">
       <option name="closed" value="true" />
@@ -125,6 +171,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="color_feature" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FOOD_CBIR$caltech256_eval.coverage" NAME="caltech256_eval Coverage Results" MODIFIED="1752170333278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/evaluation" />
+    <SUITE FILE_PATH="coverage/FOOD_CBIR$test_caltech256.coverage" NAME="test_caltech256 Coverage Results" MODIFIED="1752164574433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FOOD_CBIR$working_demo.coverage" NAME="working_demo Coverage Results" MODIFIED="1752119254212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/FOOD_CBIR$caltech256.coverage" NAME="caltech256 Coverage Results" MODIFIED="1752169940652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/datasets" />
+    <SUITE FILE_PATH="coverage/FOOD_CBIR$distance.coverage" NAME="distance Coverage Results" MODIFIED="1752116879104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/utils" />
+    <SUITE FILE_PATH="coverage/FOOD_CBIR$eval_demo.coverage" NAME="eval_demo Coverage Results" MODIFIED="1752119270393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/FOOD_CBIR$food101.coverage" NAME="food101 Coverage Results" MODIFIED="1752073917169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/datasets" />
+    <SUITE FILE_PATH="coverage/FOOD_CBIR$color_eval.coverage" NAME="color_eval Coverage Results" MODIFIED="1752171311752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/evaluation" />
   </component>
 </project>
