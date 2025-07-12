@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77c8946b-569d-4541-8051-507015f3d19d" name="Changes" comment="color_feature">
-      <change afterPath="$PROJECT_DIR$/src/evaluation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/grid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FOOD-CBIR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FOOD-CBIR.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datasets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/datasets/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datasets/food101.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/datasets/food101.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/featuring/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/featuring/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/retrieval/KNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/retrieval/KNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/retrieval/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/retrieval/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/VectorDBStore.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/VectorDBStore.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/evaluation/color_eval.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/evaluation/color_eval.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/evaluation/interactive_query.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/evaluation/interactive_query.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -74,6 +63,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AI\Food-CBIR\src\evaluation\data" />
       <recent name="D:\AI\Food-CBIR\data\caltech-256" />
       <recent name="D:\AI\Food-CBIR\data" />
       <recent name="D:\AI\Food-CBIR\cbir" />
@@ -132,6 +122,8 @@
       <workItem from="1752064890231" duration="10759000" />
       <workItem from="1752115910068" duration="35353000" />
       <workItem from="1752219904004" duration="258000" />
+      <workItem from="1752220180010" duration="19408000" />
+      <workItem from="1752293410177" duration="16317000" />
     </task>
     <task id="LOCAL-00001" summary="color_feature">
       <option name="closed" value="true" />
