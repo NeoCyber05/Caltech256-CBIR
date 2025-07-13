@@ -1,6 +1,6 @@
 # Cấu hình chung cho project CBIR Food 101
 project:
-  name: "Food-CBIR"
+  name: "Caltech256-CBIR"
   version: "1.0.0"
   description: "Content-Based Image Retrieval for Food 101 Dataset"
 

@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77c8946b-569d-4541-8051-507015f3d19d" name="Changes" comment="color_feature">
+      <change beforePath="$PROJECT_DIR$/.idea/FOOD-CBIR.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/evaluation/color_eval.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/evaluation/color_eval.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/evaluation/interactive_query.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/evaluation/interactive_query.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/evaluation/color_eval_chromadb.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/evaluation/color_eval_chromadb.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,7 @@
     &quot;Python.working_demo.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/AI/Food-CBIR&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -71,7 +73,7 @@
   </component>
   <component name="RunManager">
     <configuration name="color_eval" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="FOOD-CBIR" />
+      <module name="Caltech256-CBIR" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -123,7 +125,8 @@
       <workItem from="1752115910068" duration="35353000" />
       <workItem from="1752219904004" duration="258000" />
       <workItem from="1752220180010" duration="19408000" />
-      <workItem from="1752293410177" duration="16317000" />
+      <workItem from="1752293410177" duration="32870000" />
+      <workItem from="1752366764114" duration="12752000" />
     </task>
     <task id="LOCAL-00001" summary="color_feature">
       <option name="closed" value="true" />
