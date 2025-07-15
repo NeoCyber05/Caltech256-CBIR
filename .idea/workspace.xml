@@ -5,11 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77c8946b-569d-4541-8051-507015f3d19d" name="Changes" comment="color_feature">
-      <change beforePath="$PROJECT_DIR$/.idea/FOOD-CBIR.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datasets/caltech_256.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/featuring/resnet50.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/evaluation/color_eval_chromadb.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/evaluation/color_eval_chromadb.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EVALUATION_COMPARISON.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datasets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/datasets/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datasets/caltech256.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datasets/food101.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/evaluation/color_eval.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/evaluation/color_eval_chromadb.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/feature_extractor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/feature_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/feature_store.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pipeline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/retrieve.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -38,31 +48,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.caltech256.executor&quot;: &quot;Run&quot;,
-    &quot;Python.caltech256_eval.executor&quot;: &quot;Run&quot;,
-    &quot;Python.color_eval.executor&quot;: &quot;Run&quot;,
-    &quot;Python.distance.executor&quot;: &quot;Run&quot;,
-    &quot;Python.eval_demo.executor&quot;: &quot;Run&quot;,
-    &quot;Python.food101.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_caltech256.executor&quot;: &quot;Run&quot;,
-    &quot;Python.working_demo.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/AI/Food-CBIR&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.caltech-256.executor": "Run",
+    "Python.caltech256.executor": "Run",
+    "Python.caltech256_eval.executor": "Run",
+    "Python.color_eval.executor": "Run",
+    "Python.distance.executor": "Run",
+    "Python.eval_demo.executor": "Run",
+    "Python.food101.executor": "Run",
+    "Python.run_resnet50_cbir.executor": "Run",
+    "Python.test_caltech256.executor": "Run",
+    "Python.working_demo.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/AI/Caltech256-CBIR",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\AI\Food-CBIR\src\evaluation\data" />
@@ -72,6 +84,29 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="caltech_256" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Caltech256-CBIR" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/datasets" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\AI\Caltech256-CBIR\src\datasets\caltech_256.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="color_eval" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Caltech256-CBIR" />
       <option name="ENV_FILES" value="" />
@@ -97,6 +132,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.caltech_256" />
         <item itemvalue="Python.color_eval" />
       </list>
     </recent_temporary>
@@ -126,7 +162,9 @@
       <workItem from="1752219904004" duration="258000" />
       <workItem from="1752220180010" duration="19408000" />
       <workItem from="1752293410177" duration="32870000" />
-      <workItem from="1752366764114" duration="12752000" />
+      <workItem from="1752366764114" duration="22625000" />
+      <workItem from="1752429828498" duration="650000" />
+      <workItem from="1752572238673" duration="14140000" />
     </task>
     <task id="LOCAL-00001" summary="color_feature">
       <option name="closed" value="true" />
@@ -169,10 +207,12 @@
     <SUITE FILE_PATH="coverage/FOOD_CBIR$caltech256_eval.coverage" NAME="caltech256_eval Coverage Results" MODIFIED="1752170333278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/evaluation" />
     <SUITE FILE_PATH="coverage/FOOD_CBIR$test_caltech256.coverage" NAME="test_caltech256 Coverage Results" MODIFIED="1752164574433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FOOD_CBIR$working_demo.coverage" NAME="working_demo Coverage Results" MODIFIED="1752119254212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/Caltech256_CBIR$run_resnet50_cbir.coverage" NAME="run_resnet50_cbir Coverage Results" MODIFIED="1752600105868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FOOD_CBIR$caltech256.coverage" NAME="caltech256 Coverage Results" MODIFIED="1752169940652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/datasets" />
     <SUITE FILE_PATH="coverage/FOOD_CBIR$distance.coverage" NAME="distance Coverage Results" MODIFIED="1752116879104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/utils" />
     <SUITE FILE_PATH="coverage/FOOD_CBIR$eval_demo.coverage" NAME="eval_demo Coverage Results" MODIFIED="1752119270393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/FOOD_CBIR$food101.coverage" NAME="food101 Coverage Results" MODIFIED="1752073917169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/datasets" />
+    <SUITE FILE_PATH="coverage/Caltech256_CBIR$caltech_256.coverage" NAME="caltech-256 Coverage Results" MODIFIED="1752594235812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/datasets" />
     <SUITE FILE_PATH="coverage/FOOD_CBIR$color_eval.coverage" NAME="color_eval Coverage Results" MODIFIED="1752171311752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/evaluation" />
   </component>
 </project>
