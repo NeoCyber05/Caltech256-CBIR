@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77c8946b-569d-4541-8051-507015f3d19d" name="Changes" comment="color_feature">
-      <change afterPath="$PROJECT_DIR$/src/datasets/caltech_256.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/featuring/resnet50.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EVALUATION_COMPARISON.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datasets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/datasets/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datasets/caltech256.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datasets/food101.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/evaluation/color_eval.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/evaluation/color_eval_chromadb.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/feature_extractor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/feature_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/feature_store.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pipeline.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/retrieve.py" beforeDir="false" />
-    </list>
+    <list default="true" id="77c8946b-569d-4541-8051-507015f3d19d" name="Changes" comment="color_feature" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,7 +148,7 @@
       <workItem from="1752293410177" duration="32870000" />
       <workItem from="1752366764114" duration="22625000" />
       <workItem from="1752429828498" duration="650000" />
-      <workItem from="1752572238673" duration="14140000" />
+      <workItem from="1752572238673" duration="14550000" />
     </task>
     <task id="LOCAL-00001" summary="color_feature">
       <option name="closed" value="true" />

@@ -2,16 +2,9 @@
 
 A Content-Based Image Retrieval (CBIR) system using ResNet-50 and ChromaDB on the Caltech-256 dataset.
 
-## Installation
+![](data/example/structure.jpg)
 
-1.  **Clone the repository:**
-    ```bash
-    git clone <your-repository-url>
-    cd <repository-directory-name>
-    ```
-
-2.  **Install dependencies:**
-    It is recommended to create a virtual environment first.
+## Install dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
@@ -56,3 +49,5 @@ After indexing is complete, you can perform a similarity search using a specific
 
 Search results, including the query image and its closest matches, will be displayed in a Matplotlib window.
 
+## DEMO
+![Kết quả tìm kiếm CBIR](data/example/demo1.jpg)
