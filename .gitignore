@@ -119,7 +119,5 @@ ehthumbs.db
 Thumbs.db
 
 # Project specific
-data
-src/evaluation/data
-src/evaluation/out
+data/caltech-256
 src/evaluation/chroma_storage
