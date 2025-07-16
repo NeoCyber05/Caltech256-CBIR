@@ -4,7 +4,7 @@ A Content-Based Image Retrieval (CBIR) system using ResNet-50 and ChromaDB on th
 
 ![](data/example/structure.jpg)
 
-## Install dependencies:**
+## Install dependencies:
     ```bash
     pip install -r requirements.txt
     ```
