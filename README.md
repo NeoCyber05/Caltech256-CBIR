@@ -37,5 +37,5 @@ From the web interface, you can select an image from your computer, specify the 
 
 
 ## DEMO
-<img src="data/example/demo_web.jpg" alt="Kết quả tìm kiếm CBIR" width="500" height="300"/>
+![Kết quả tìm kiếm CBIR](data/example/demo_web.jpg)
 

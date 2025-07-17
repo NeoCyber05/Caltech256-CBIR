@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77c8946b-569d-4541-8051-507015f3d19d" name="Changes" comment="color_feature">
-      <change afterPath="$PROJECT_DIR$/index_resnet50_cbir.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/example/demo1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_resnet50_cbir.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datasets/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/evaluation/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/featuring/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/ChromaDBStore.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/ChromaDBStore.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/__init__.py" beforeDir="false" />
-    </list>
+    <list default="true" id="77c8946b-569d-4541-8051-507015f3d19d" name="Changes" comment="color_feature" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,6 +151,7 @@
       <workItem from="1752572238673" duration="18221000" />
       <workItem from="1752680260683" duration="622000" />
       <workItem from="1752741496418" duration="4609000" />
+      <workItem from="1752747187171" duration="809000" />
     </task>
     <task id="LOCAL-00001" summary="color_feature">
       <option name="closed" value="true" />
