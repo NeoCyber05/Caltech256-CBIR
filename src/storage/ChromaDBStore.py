@@ -36,8 +36,11 @@ class ChromaDBStore(FeatureStore):
             print("Cannot search with a null feature vector.")
             return []
 
+
+        query_embedding = feature.tolist() if isinstance(feature, np.ndarray) else feature
+
         results = self.collection.query(
-            query_embeddings=[feature.tolist()],
+            query_embeddings=[query_embedding],
             n_results=k,
             include=["metadatas", "distances"]
         )
@@ -50,8 +53,7 @@ class ChromaDBStore(FeatureStore):
             doc_id = results['ids'][0][i]
             distance = results['distances'][0][i]
             metadata = results['metadatas'][0][i]
-            # The 'score' can be the distance or a transformation of it.
-            # Here, lower distance is better.
+
             search_results.append(ImageSearchObject(index=doc_id, score=distance, image=metadata.get('filepath')))
             
         return search_results
