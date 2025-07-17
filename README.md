@@ -4,17 +4,10 @@ A Content-Based Image Retrieval (CBIR) system using ResNet-50, ChromaDB, and a F
 
 ![](data/example/structure.jpg)
 
-<<<<<<< Updated upstream
 ## Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-=======
-## Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
->>>>>>> Stashed changes
 
 ## Dataset Setup
 
@@ -43,14 +36,6 @@ The server will be available at `http://127.0.0.1:8000`.
 From the web interface, you can select an image from your computer, specify the number of results, and see the most similar images from the dataset.
 
 
-
--   **To specify the number of results:**
-    Use the `--n_results` argument to control how many similar images are returned.
-    ```bash
-    python run_resnet50_cbir.py --mode search --query_image "/path/to/your/image.jpg" --n_results 10
-    ```
-
-Search results, including the query image and its closest matches, will be displayed in a Matplotlib window.
-
 ## DEMO
-![Kết quả tìm kiếm CBIR](data/example/demo_web.jpg)
+<img src="data/example/demo_web.jpg" alt="Kết quả tìm kiếm CBIR" width="500" height="300"/>
+
