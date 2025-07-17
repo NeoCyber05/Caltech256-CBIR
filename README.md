@@ -44,7 +44,6 @@ From the web interface, you can select an image from your computer, specify the 
 
 
 
-<<<<<<< Updated upstream
 -   **To specify the number of results:**
     Use the `--n_results` argument to control how many similar images are returned.
     ```bash
@@ -54,8 +53,4 @@ From the web interface, you can select an image from your computer, specify the 
 Search results, including the query image and its closest matches, will be displayed in a Matplotlib window.
 
 ## DEMO
-![Kết quả tìm kiếm CBIR](data/example/demo1.jpg)
-=======
-## DEMO Screenshot
 ![Kết quả tìm kiếm CBIR](data/example/demo_web.jpg)
->>>>>>> Stashed changes
