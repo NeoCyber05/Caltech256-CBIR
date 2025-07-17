@@ -121,3 +121,4 @@ Thumbs.db
 # Project specific
 data/caltech-256
 src/evaluation/chroma_storage
+chroma_db/
